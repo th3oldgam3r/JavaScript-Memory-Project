@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  background: #FFA0B3;
+  text-align: center;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 20px;
+  text-decoration: none;
+  margin: auto;
+  /*width: 300px;*/
+  /*height: 200px;*/
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #e596a6;
+  text-decoration: none;
+}
+
+.flipImage {
+  width: 200px;
+  cursor: pointer;
+}
+
+.gameTile {
+  display: inline-block;
+  /*border: 1px solid white;*/
+  padding: 2px;
+  color: #fff;  
+  
+  animation: enter 600ms ease-out;
+  transform-style: preserve-3d;
+  transform: translateZ(0) scale(1);
+  transition: all 350ms ease-out;
+  transform-origin: 50% 50%;
+  backface-visibility: hidden;
+
+}
+
+#gameboard {
+  position: relative;
+  /*transform-style: preserve-3d;*/
+  /*transform: rotateX(35deg) rotateZ(22deg);*/
+  user-select: none;
+}
+
+body {
+  align-items: center;
+  background-image: radial-gradient(circle 448px at center, #f4e7f5 0%, #f7d4f8 47%, #eacfeb 100%);
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1200px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Dosis', sans-serif;
+}
+
+.top {
+  margin-bottom: 25px;
+}
+
+.top h1{
+  color: white;
+  letter-spacing: 10px;
+  font-size: 68px;
+  padding: 10px 5px;
+  width: 100%;
+  font-weight: 600;
+}
+
+.main {
+  width: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  margin-top: 35px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: white;
+  font-weight: 200;
+}
+
+.message {
+  color: white;
+  text-transform: uppercase;
+  
+}
+
